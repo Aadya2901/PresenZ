@@ -71,7 +71,7 @@ pip install flask opencv-python-headless deepface
 ```
 
 ### 4️⃣ Download YOLO weights
-Place yolov11l-face.pt and yolov11n-face.pt inside the project root folder.
+Place `yolov11l-face.pt` and `yolov11n-face.pt` inside the project root folder.
 
 ### 5️⃣ Run Flask UI
 ``` bash
