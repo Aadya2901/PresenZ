@@ -5,6 +5,16 @@ It eliminates manual roll calls by detecting, identifying, and logging individua
 
 ✨ Built with **YOLOv8**, **DeepFace**, **OpenCV**, and **Flask**, PresenZ provides both **backend intelligence** and a **web-based UI**.  
 
+# 🎓 PresenZ – AI-Powered Face Recognition Attendance System  
+
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)  
+![Flask](https://img.shields.io/badge/Flask-2.3-lightgrey)  
+![YOLOv8](https://img.shields.io/badge/YOLOv8-Face%20Detection-orange)  
+![DeepFace](https://img.shields.io/badge/DeepFace-Face%20Recognition-brightgreen)  
+![License](https://img.shields.io/badge/License-MIT-green)  
+![GitHub stars](https://img.shields.io/github/stars/your-username/PresenZ?style=social)  
+![GitHub forks](https://img.shields.io/github/forks/your-username/PresenZ?style=social)  
+
 ---
 
 ## 🚀 Features  
