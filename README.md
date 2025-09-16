@@ -9,12 +9,12 @@ It eliminates manual roll calls by detecting, identifying, and logging individua
 
 ## 🚀 Features  
 
-- 📷 **Real-time Detection** – Tracks faces live from CCTV / webcam / video feed.  
-- 🤖 **Face Recognition** – Identifies individuals using **DeepFace embeddings**.  
-- 🗂️ **Attendance Logs** – Exports clean CSV files with name + timestamp.  
-- ⚡ **Optimized Pipeline** – YOLOv8 detection + DeepFace caching for speed.  
-- 🌐 **Web UI (Flask + HTML/CSS/JS)** – Simple dashboard to start/stop tracking and view attendance.  
-- 🔒 **Duplicate Prevention** – Each person is marked *Present* only once.  
+- 📷 **Real-time Detection** – Tracks faces live from CCTV / webcam / video feed  
+- 🤖 **Face Recognition** – Identifies individuals using **DeepFace embeddings**  
+- 🗂️ **Attendance Logs** – Exports clean CSV files with name + timestamp  
+- ⚡ **Optimized Pipeline** – YOLOv8 detection + DeepFace caching for speed  
+- 🌐 **Web UI (Flask + HTML/CSS/JS)** – Simple dashboard to start/stop tracking and view attendance  
+- 🔒 **Duplicate Prevention** – Each person is marked *Present* only once  
 
 ---
 
@@ -33,69 +33,70 @@ It eliminates manual roll calls by detecting, identifying, and logging individua
 
 ## 📂 Project Structure  
 
-```
+```bash
 PresenZ/
-│── core1.py              # YOLO + DeepFace pipeline  
-│── core1_improved.py     # Optimized pipeline (faster, frame skipping)  
+│── core1.py                # YOLO + DeepFace pipeline  
+│── core1_improved.py       # Optimized pipeline (faster, frame skipping)  
 │── deep_track_prototype.py # Webcam-based demo  
-│── templates/            # HTML files for Flask UI  
-│── static/               # CSS/JS assets for UI  
-│── known_faces/          # Database of registered faces  
-│── attendance/           # Output attendance CSVs  
-│── output/               # Annotated videos  
-│── yolov11l-face.pt      # YOLOv8 large model  
-│── yolov11n-face.pt      # YOLOv8 nano model  
-│── requirements.txt      # Dependencies  
-│── README.md             # Project documentation  
+│── templates/              # HTML files for Flask UI  
+│── static/                 # CSS/JS assets for UI  
+│── known_faces/            # Database of registered faces  
+│── attendance/             # Output attendance CSVs  
+│── output/                 # Annotated videos  
+│── yolov11l-face.pt        # YOLOv8 large model  
+│── yolov11n-face.pt        # YOLOv8 nano model  
+│── requirements.txt        # Dependencies  
+│── README.md               # Project documentation  
+
 ```
 
-⚡ Setup Instructions
+## ⚡ Setup Instructions  
 
-Clone the repo
-
+### 1️⃣ Clone the repo  
+```bash
 git clone https://github.com/<your-username>/PresenZ.git
 cd PresenZ
+```
 
-
-Create virtual environment (Windows)
-
+### 2️⃣ Create virtual environment (Windows)
+``` bash
 python -m venv venv
 venv\Scripts\activate
+```
 
-
-Install dependencies
-
+### 3️⃣ Install dependencies
+``` bash
 pip install -r requirements.txt
 pip install flask opencv-python-headless deepface
+```
 
-
-Download YOLO weights
-
+### 4️⃣ Download YOLO weights
 Place yolov11l-face.pt and yolov11n-face.pt inside the project root folder.
 
-Run Flask UI
-
+### 5️⃣ Run Flask UI
+``` bash
 python app.py
+```
 
-
-Visit 👉 http://127.0.0.1:5000 in your browser.
+👉 Visit http://127.0.0.1:5000
+ in your browser.
 
 📊 Sample Attendance Log
 
 final_attendance.csv
+Name,Time
+Shankar Singh,2025-07-12 09:43:21
+Anurag Singh,2025-07-12 09:44:12
 
-Name	Time
-Shankar Singh	2025-07-12 09:43:21
-Anurag Singh	2025-07-12 09:44:12
 🔮 Future Scope
 
-🌍 Multi-camera support for large classrooms.
+🌍 Multi-camera support for large classrooms
 
-🖥️ Admin dashboard for attendance analytics.
+🖥️ Admin dashboard for attendance analytics
 
-🛡️ Liveness detection to prevent spoofing.
+🛡️ Liveness detection to prevent spoofing
 
-📱 Mobile-friendly interface.
+📱 Mobile-friendly interface
 
 👨‍💻 Team PresenZ
 
@@ -108,3 +109,4 @@ Anurag Singh	2025-07-12 09:44:12
 📧 Contact us: team.presenz@gmail.com
 
 ⚡ PresenZ – Making attendance smart, fast, and effortless!
+
